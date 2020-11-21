@@ -13,6 +13,7 @@
 		C9C3965F2569359600763F33 /* DFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3965E2569359600763F33 /* DFrameworkTests.swift */; };
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
+		C9C396952569396B00763F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C396942569396B00763F33 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		C9C3965E2569359600763F33 /* DFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFrameworkTests.swift; sourceTree = "<group>"; };
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C9C396942569396B00763F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				C9C39683256938EC00763F33 /* Localizable.strings */,
+				C9C396942569396B00763F33 /* Assets.xcassets */,
+				C9C396912569394A00763F33 /* CodeGeneration */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -135,6 +139,13 @@
 			children = (
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		C9C396912569394A00763F33 /* CodeGeneration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeGeneration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C396952569396B00763F33 /* Assets.xcassets in Resources */,
 				C9C39684256938EC00763F33 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
