@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'D-Framework'
+  s.name             = 'DFramework'
   s.version          = '0.1.0'
   s.summary          = 'A base framework is for iOS, macOS, watchOS and tvOS development.'
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
-  s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/Code Generation/*'
+  s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
   s.resources = 'DFramework/Resources/*'
   
 end

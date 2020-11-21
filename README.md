@@ -1,20 +1,21 @@
 # DFramework
 
-[![CI Status](https://img.shields.io/travis/Yusuf Demirci/DFramework.svg?style=flat)](https://travis-ci.org/Yusuf Demirci/DFramework)
+[![CI Status](https://img.shields.io/travis/demirciy/DFramework.svg?style=flat)](https://travis-ci.com/demirciy/DFramework)
 [![Version](https://img.shields.io/cocoapods/v/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
 [![License](https://img.shields.io/cocoapods/l/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
 [![Platform](https://img.shields.io/cocoapods/p/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
-## Installation
+- iOS 14+
+- macOS 10.15.6+
+- watchOS 7+
+- tvOS 14+
 
-DFramework is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+- Xcode 12+
+- Swift 5+
+
+## Installation
 
 ```ruby
 pod 'DFramework'
