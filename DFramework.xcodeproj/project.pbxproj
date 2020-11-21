@@ -13,6 +13,32 @@
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
 		C9C396952569396B00763F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C396942569396B00763F33 /* Assets.xcassets */; };
+		C9C396B225693ACA00763F33 /* DAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B125693ACA00763F33 /* DAppManager.swift */; };
+		C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B525693B1300763F33 /* DKeychainManager.swift */; };
+		C9C396BA25693B6600763F33 /* DLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B925693B6600763F33 /* DLanguageManager.swift */; };
+		C9C396BE25693B7E00763F33 /* DLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396BD25693B7E00763F33 /* DLogManager.swift */; };
+		C9C396C225693BD200763F33 /* DPushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396C125693BD200763F33 /* DPushNotificationManager.swift */; };
+		C9C396C825693C7D00763F33 /* DPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396C725693C7D00763F33 /* DPushNotification.swift */; };
+		C9C396CE25693CD400763F33 /* DDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396CD25693CD400763F33 /* DDate.swift */; };
+		C9C396D425693D2000763F33 /* DConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396D325693D2000763F33 /* DConstant.swift */; };
+		C9C396D825693D6400763F33 /* DUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396D725693D6400763F33 /* DUtil.swift */; };
+		C9C396E025693DCB00763F33 /* DIapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396DF25693DCB00763F33 /* DIapManager.swift */; };
+		C9C396E625693DFC00763F33 /* DIapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396E525693DFC00763F33 /* DIapError.swift */; };
+		C9C396EC25693E1B00763F33 /* DDateConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396EB25693E1B00763F33 /* DDateConstant.swift */; };
+		C9C396F125693EA400763F33 /* DAdaptKeyboardByInputModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396F025693EA400763F33 /* DAdaptKeyboardByInputModifier.swift */; };
+		C9C396F92569403900763F33 /* DDismissKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396F82569403900763F33 /* DDismissKeyboardModifier.swift */; };
+		C9C39702256940EF00763F33 /* DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C39701256940EF00763F33 /* DView.swift */; };
+		C9C397072569411E00763F33 /* DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397062569411E00763F33 /* DError.swift */; };
+		C9C397162569418500763F33 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397142569418500763F33 /* Assets.swift */; };
+		C9C397172569418500763F33 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397152569418500763F33 /* Strings.swift */; };
+		C9C3971D256941B400763F33 /* DLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3971C256941B400763F33 /* DLanguage.swift */; };
+		C9C39722256941D500763F33 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C39721256941D500763F33 /* Bundle+Extension.swift */; };
+		C9C39726256941EE00763F33 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C39725256941EE00763F33 /* Date+Extension.swift */; };
+		C9C3972A2569420300763F33 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397292569420300763F33 /* Double+Extension.swift */; };
+		C9C3972E2569421A00763F33 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3972D2569421A00763F33 /* NSNumber+Extension.swift */; };
+		C9C397322569423700763F33 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397312569423700763F33 /* UIColor+Extension.swift */; };
+		C9C397362569424F00763F33 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397352569424E00763F33 /* UIDevice+Extension.swift */; };
+		C9C3973A2569426600763F33 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397392569426600763F33 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +65,32 @@
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C9C396942569396B00763F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C396B125693ACA00763F33 /* DAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAppManager.swift; sourceTree = "<group>"; };
+		C9C396B525693B1300763F33 /* DKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKeychainManager.swift; sourceTree = "<group>"; };
+		C9C396B925693B6600763F33 /* DLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguageManager.swift; sourceTree = "<group>"; };
+		C9C396BD25693B7E00763F33 /* DLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLogManager.swift; sourceTree = "<group>"; };
+		C9C396C125693BD200763F33 /* DPushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPushNotificationManager.swift; sourceTree = "<group>"; };
+		C9C396C725693C7D00763F33 /* DPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPushNotification.swift; sourceTree = "<group>"; };
+		C9C396CD25693CD400763F33 /* DDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDate.swift; sourceTree = "<group>"; };
+		C9C396D325693D2000763F33 /* DConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DConstant.swift; sourceTree = "<group>"; };
+		C9C396D725693D6400763F33 /* DUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUtil.swift; sourceTree = "<group>"; };
+		C9C396DF25693DCB00763F33 /* DIapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIapManager.swift; sourceTree = "<group>"; };
+		C9C396E525693DFC00763F33 /* DIapError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIapError.swift; sourceTree = "<group>"; };
+		C9C396EB25693E1B00763F33 /* DDateConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDateConstant.swift; sourceTree = "<group>"; };
+		C9C396F025693EA400763F33 /* DAdaptKeyboardByInputModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAdaptKeyboardByInputModifier.swift; sourceTree = "<group>"; };
+		C9C396F82569403900763F33 /* DDismissKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDismissKeyboardModifier.swift; sourceTree = "<group>"; };
+		C9C39701256940EF00763F33 /* DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DView.swift; sourceTree = "<group>"; };
+		C9C397062569411E00763F33 /* DError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DError.swift; sourceTree = "<group>"; };
+		C9C397142569418500763F33 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C9C397152569418500763F33 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C9C3971C256941B400763F33 /* DLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguage.swift; sourceTree = "<group>"; };
+		C9C39721256941D500763F33 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		C9C39725256941EE00763F33 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C9C397292569420300763F33 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		C9C3972D2569421A00763F33 /* NSNumber+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extension.swift"; sourceTree = "<group>"; };
+		C9C397312569423700763F33 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C9C397352569424E00763F33 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		C9C397392569426600763F33 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +186,11 @@
 		C9C39682256938DC00763F33 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9C396B025693AC000763F33 /* Managers */,
+				C9C396C625693C6000763F33 /* Models */,
+				C9C396EF25693E7E00763F33 /* Modifiers */,
+				C9C39700256940E600763F33 /* Protocols */,
+				C9C396D125693D0100763F33 /* Utilities */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -141,8 +198,109 @@
 		C9C396912569394A00763F33 /* CodeGeneration */ = {
 			isa = PBXGroup;
 			children = (
+				C9C397142569418500763F33 /* Assets.swift */,
+				C9C397152569418500763F33 /* Strings.swift */,
 			);
 			path = CodeGeneration;
+			sourceTree = "<group>";
+		};
+		C9C396B025693AC000763F33 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396B125693ACA00763F33 /* DAppManager.swift */,
+				C9C396B525693B1300763F33 /* DKeychainManager.swift */,
+				C9C396B925693B6600763F33 /* DLanguageManager.swift */,
+				C9C396BD25693B7E00763F33 /* DLogManager.swift */,
+				C9C396DE25693DAF00763F33 /* DIap */,
+				C9C396DD25693D9C00763F33 /* DPushNotification */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		C9C396C625693C6000763F33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396CD25693CD400763F33 /* DDate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C9C396D125693D0100763F33 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396D725693D6400763F33 /* DUtil.swift */,
+				C9C396D225693D0900763F33 /* Constants */,
+				C9C397052569411600763F33 /* Enums */,
+				C9C39720256941CD00763F33 /* Extensions */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C9C396D225693D0900763F33 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396D325693D2000763F33 /* DConstant.swift */,
+				C9C396EB25693E1B00763F33 /* DDateConstant.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		C9C396DD25693D9C00763F33 /* DPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396C725693C7D00763F33 /* DPushNotification.swift */,
+				C9C396C125693BD200763F33 /* DPushNotificationManager.swift */,
+			);
+			name = DPushNotification;
+			sourceTree = "<group>";
+		};
+		C9C396DE25693DAF00763F33 /* DIap */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396E525693DFC00763F33 /* DIapError.swift */,
+				C9C396DF25693DCB00763F33 /* DIapManager.swift */,
+			);
+			name = DIap;
+			sourceTree = "<group>";
+		};
+		C9C396EF25693E7E00763F33 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C9C396F025693EA400763F33 /* DAdaptKeyboardByInputModifier.swift */,
+				C9C396F82569403900763F33 /* DDismissKeyboardModifier.swift */,
+			);
+			name = Modifiers;
+			sourceTree = "<group>";
+		};
+		C9C39700256940E600763F33 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C9C39701256940EF00763F33 /* DView.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C9C397052569411600763F33 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C9C397062569411E00763F33 /* DError.swift */,
+				C9C3971C256941B400763F33 /* DLanguage.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		C9C39720256941CD00763F33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9C39721256941D500763F33 /* Bundle+Extension.swift */,
+				C9C39725256941EE00763F33 /* Date+Extension.swift */,
+				C9C397292569420300763F33 /* Double+Extension.swift */,
+				C9C3972D2569421A00763F33 /* NSNumber+Extension.swift */,
+				C9C397312569423700763F33 /* UIColor+Extension.swift */,
+				C9C397352569424E00763F33 /* UIDevice+Extension.swift */,
+				C9C397392569426600763F33 /* View+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +368,7 @@
 				TargetAttributes = {
 					C9C3964F2569359600763F33 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					C9C396582569359600763F33 = {
 						CreatedOnToolsVersion = 12.1;
@@ -342,6 +501,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C396F92569403900763F33 /* DDismissKeyboardModifier.swift in Sources */,
+				C9C396D425693D2000763F33 /* DConstant.swift in Sources */,
+				C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */,
+				C9C396CE25693CD400763F33 /* DDate.swift in Sources */,
+				C9C396C825693C7D00763F33 /* DPushNotification.swift in Sources */,
+				C9C397072569411E00763F33 /* DError.swift in Sources */,
+				C9C397162569418500763F33 /* Assets.swift in Sources */,
+				C9C396C225693BD200763F33 /* DPushNotificationManager.swift in Sources */,
+				C9C396BE25693B7E00763F33 /* DLogManager.swift in Sources */,
+				C9C396B225693ACA00763F33 /* DAppManager.swift in Sources */,
+				C9C3973A2569426600763F33 /* View+Extension.swift in Sources */,
+				C9C3972E2569421A00763F33 /* NSNumber+Extension.swift in Sources */,
+				C9C397172569418500763F33 /* Strings.swift in Sources */,
+				C9C39726256941EE00763F33 /* Date+Extension.swift in Sources */,
+				C9C39722256941D500763F33 /* Bundle+Extension.swift in Sources */,
+				C9C396E625693DFC00763F33 /* DIapError.swift in Sources */,
+				C9C397322569423700763F33 /* UIColor+Extension.swift in Sources */,
+				C9C396BA25693B6600763F33 /* DLanguageManager.swift in Sources */,
+				C9C396D825693D6400763F33 /* DUtil.swift in Sources */,
+				C9C397362569424F00763F33 /* UIDevice+Extension.swift in Sources */,
+				C9C3972A2569420300763F33 /* Double+Extension.swift in Sources */,
+				C9C39702256940EF00763F33 /* DView.swift in Sources */,
+				C9C3971D256941B400763F33 /* DLanguage.swift in Sources */,
+				C9C396EC25693E1B00763F33 /* DDateConstant.swift in Sources */,
+				C9C396E025693DCB00763F33 /* DIapManager.swift in Sources */,
+				C9C396F125693EA400763F33 /* DAdaptKeyboardByInputModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +674,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8634BF3BD45E7D8C0A610CDE /* Pods-DFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
@@ -507,6 +693,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.dframework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -516,6 +703,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8266FF4BA1213595B3B4EF2 /* Pods-DFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
@@ -543,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1682FB8AD7AC6EACFC37D5A /* Pods-DFramework-DFrameworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
 				INFOPLIST_FILE = DFrameworkTests/Info.plist;
@@ -562,6 +751,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B32621E12E7312FA88B05361 /* Pods-DFramework-DFrameworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
 				INFOPLIST_FILE = DFrameworkTests/Info.plist;

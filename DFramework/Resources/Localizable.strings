@@ -5,3 +5,7 @@
   Created by Yusuf Demirci on 21.11.20.
   
 */
+
+// MARK: - DError
+
+DError.general = "A general error occured.";
