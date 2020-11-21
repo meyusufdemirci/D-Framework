@@ -12,6 +12,7 @@
 		C9C3965A2569359600763F33 /* DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C396502569359600763F33 /* DFramework.framework */; };
 		C9C3965F2569359600763F33 /* DFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3965E2569359600763F33 /* DFrameworkTests.swift */; };
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C9C396592569359600763F33 /* DFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C3965E2569359600763F33 /* DFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFrameworkTests.swift; sourceTree = "<group>"; };
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,8 @@
 			children = (
 				C9C396532569359600763F33 /* DFramework.h */,
 				C9C396542569359600763F33 /* Info.plist */,
+				C9C39682256938DC00763F33 /* Classes */,
+				C9C39681256938DC00763F33 /* Resources */,
 			);
 			path = DFramework;
 			sourceTree = "<group>";
@@ -116,6 +120,21 @@
 				C9C396602569359600763F33 /* Info.plist */,
 			);
 			path = DFrameworkTests;
+			sourceTree = "<group>";
+		};
+		C9C39681256938DC00763F33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9C39683256938EC00763F33 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9C39682256938DC00763F33 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,9 @@
 			buildPhases = (
 				8B2C2E2DC688B02BECD32BD2 /* [CP] Check Pods Manifest.lock */,
 				C9C3964B2569359600763F33 /* Headers */,
+				C9C3967D2569389F00763F33 /* Run SwiftGen */,
 				C9C3964C2569359600763F33 /* Sources */,
+				C9C3967E256938B400763F33 /* Run SwiftLint */,
 				C9C3964D2569359600763F33 /* Frameworks */,
 				C9C3964E2569359600763F33 /* Resources */,
 			);
@@ -211,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C39684256938EC00763F33 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +289,42 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C9C3967D2569389F00763F33 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		C9C3967E256938B400763F33 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect && \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

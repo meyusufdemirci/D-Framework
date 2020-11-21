@@ -4,7 +4,8 @@ platform :ios, '14.0'
 target 'DFramework' do
   use_frameworks!
 
-  # Pods for DFramework
+  pod 'SwiftGen'
+  pod 'SwiftLint'
 
   target 'DFrameworkTests' do
     # Pods for testing

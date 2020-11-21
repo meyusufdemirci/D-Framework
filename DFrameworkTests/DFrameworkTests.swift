@@ -5,8 +5,8 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-import XCTest
 @testable import DFramework
+import XCTest
 
 class DFrameworkTests: XCTestCase {
 
@@ -29,5 +29,4 @@ class DFrameworkTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
