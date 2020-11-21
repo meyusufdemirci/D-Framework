@@ -10,7 +10,6 @@
 		0F374B614ACDE9B7B283A023 /* Pods_DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29776AC80E79F7C1B575D7C8 /* Pods_DFramework.framework */; };
 		2375DE7123EBD964645CBF48 /* Pods_DFramework_DFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */; };
 		C9C3965A2569359600763F33 /* DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C396502569359600763F33 /* DFramework.framework */; };
-		C9C3965F2569359600763F33 /* DFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3965E2569359600763F33 /* DFrameworkTests.swift */; };
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
 		C9C396952569396B00763F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C396942569396B00763F33 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 		C9C396532569359600763F33 /* DFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFramework.h; sourceTree = "<group>"; };
 		C9C396542569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C396592569359600763F33 /* DFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9C3965E2569359600763F33 /* DFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFrameworkTests.swift; sourceTree = "<group>"; };
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C9C396942569396B00763F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		C9C3965D2569359600763F33 /* DFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9C3965E2569359600763F33 /* DFrameworkTests.swift */,
 				C9C396602569359600763F33 /* Info.plist */,
 			);
 			path = DFrameworkTests;
@@ -352,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C3965F2569359600763F33 /* DFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
