@@ -40,16 +40,12 @@ public extension DIapManager {
 
     func purchase(productId: String, completion: @escaping(Swift.Result<String, DIapError>) -> Void) {
         guard let product = availableProducts.first(where: { $0.productIdentifier == productId }) else {
-            DispatchQueue.main.async {
-                completion(.failure(.productCouldNotFindInAvailableProducts))
-            }
+            completion(.failure(.productCouldNotFindInAvailableProducts))
             return
         }
 
         guard canMakePurchase else {
-            DispatchQueue.main.async {
-                completion(.failure(.canNotMakePurchase))
-            }
+            completion(.failure(.canNotMakePurchase))
             return
         }
 
@@ -87,16 +83,12 @@ extension DIapManager: SKPaymentTransactionObserver {
         case .purchased:
             SKPaymentQueue.default().finishTransaction(transaction)
 
-            DispatchQueue.main.async {
-                self.purchaseResult?(.success(transaction.payment.productIdentifier))
-            }
+            self.purchaseResult?(.success(transaction.payment.productIdentifier))
 
         case .failed:
             SKPaymentQueue.default().finishTransaction(transaction)
 
-            DispatchQueue.main.async {
-                self.purchaseResult?(.failure(.paymentFailed))
-            }
+            self.purchaseResult?(.failure(.paymentFailed))
 
         case .restored:
             SKPaymentQueue.default().finishTransaction(transaction)
@@ -114,9 +106,7 @@ extension DIapManager: SKPaymentTransactionObserver {
     public func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
         DLog.error(error.localizedDescription)
 
-        DispatchQueue.main.async {
-            self.restoreResult?(.restoreFailed)
-        }
+        self.restoreResult?(.restoreFailed)
     }
 }
 

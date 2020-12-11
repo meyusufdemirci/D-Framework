@@ -43,28 +43,20 @@ public extension DPushNotificationManager {
             completionHandler: { isSuccess, error in
                 if let error = error {
                     DLog.error("Notification registration failed: \(error.localizedDescription)")
-                    DispatchQueue.main.async {
-                        completion(false)
-                    }
+                    completion(false)
                     return
                 }
 
-                DispatchQueue.main.async {
-                    completion(isSuccess)
-                }
+                completion(isSuccess)
             })
 
-        DispatchQueue.main.async {
-            UIApplication.shared.registerForRemoteNotifications()
-        }
+        UIApplication.shared.registerForRemoteNotifications()
     }
     #endif
 
     class func authStatus(completion: @escaping(_ status: UNAuthorizationStatus) -> Void) {
         UNUserNotificationCenter.current().getNotificationSettings { settings in
-            DispatchQueue.main.async {
-                completion(settings.authorizationStatus)
-            }
+            completion(settings.authorizationStatus)
         }
     }
 
