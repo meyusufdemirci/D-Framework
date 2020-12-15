@@ -11,45 +11,42 @@ public class DIapManager: NSObject {
 
     // MARK: Properties
 
-    public var availableProducts: [SKProduct] = []
+    public static let shared = DIapManager()
 
-    private let productsRequest: SKProductsRequest
-    private let allProductIds: [String]
-    private var purchaseResult: ((Swift.Result<String, DIapError>) -> Void)?
-    private var restoreResult: ((DIapError) -> Void)?
+    public var purchaseResult: ((Swift.Result<SKProduct?, DIapError>) -> Void)?
+    public var restoreResult: ((DIapError) -> Void)?
 
-    init(allProductIds: [String]) {
-        self.allProductIds = allProductIds
-        self.productsRequest = SKProductsRequest(productIdentifiers: Set(allProductIds))
+    public private(set) var availableProducts: [SKProduct] = []
 
-        super.init()
+    private var productsRequest: SKProductsRequest?
+    private var allProductIds: [String] = []
 
-        productsRequest.delegate = self
-
-        fetchAvailableProducts()
-    }
+    public override init() {}
 }
 
 // MARK: - Publics
 
 public extension DIapManager {
 
-    func fetchAvailableProducts() {
-        productsRequest.start()
+    func setProductIds(_ ids: [String]) {
+        allProductIds = ids
+
+        productsRequest = SKProductsRequest(productIdentifiers: Set(allProductIds))
+        productsRequest?.delegate = self
+
+        fetchAvailableProducts()
     }
 
-    func purchase(productId: String, completion: @escaping(Swift.Result<String, DIapError>) -> Void) {
+    func purchase(productId: String) {
         guard let product = availableProducts.first(where: { $0.productIdentifier == productId }) else {
-            completion(.failure(.productCouldNotFindInAvailableProducts))
+            purchaseResult?(.failure(.productCouldNotFindInAvailableProducts))
             return
         }
 
         guard canMakePurchase else {
-            completion(.failure(.canNotMakePurchase))
+            purchaseResult?(.failure(.canNotMakePurchase))
             return
         }
-
-        self.purchaseResult = completion
 
         SKPaymentQueue.default().add(self)
         SKPaymentQueue.default().add(SKPayment(product: product))
@@ -67,14 +64,21 @@ extension DIapManager: SKProductsRequestDelegate {
     }
 }
 
+// MARK: - SKRequestDelegate
+
+extension DIapManager: SKRequestDelegate {
+
+    public func request(_ request: SKRequest, didFailWithError error: Error) {
+        DLog.error(error.localizedDescription)
+    }
+}
+
 // MARK: - SKPaymentTransactionObserver
 
 extension DIapManager: SKPaymentTransactionObserver {
 
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        guard let transaction = transactions.first else {
-            return
-        }
+        guard let transaction = transactions.first else { return }
 
         switch transaction.transactionState {
         case .purchasing:
@@ -83,7 +87,9 @@ extension DIapManager: SKPaymentTransactionObserver {
         case .purchased:
             SKPaymentQueue.default().finishTransaction(transaction)
 
-            self.purchaseResult?(.success(transaction.payment.productIdentifier))
+            let product = availableProducts.first { $0.productIdentifier == transaction.payment.productIdentifier }
+
+            self.purchaseResult?(.success(product))
 
         case .failed:
             SKPaymentQueue.default().finishTransaction(transaction)
@@ -116,5 +122,14 @@ private extension DIapManager {
 
     var canMakePurchase: Bool {
         SKPaymentQueue.canMakePayments()
+    }
+}
+
+// MARK: - Privates
+
+private extension DIapManager {
+
+    func fetchAvailableProducts() {
+        productsRequest?.start()
     }
 }
