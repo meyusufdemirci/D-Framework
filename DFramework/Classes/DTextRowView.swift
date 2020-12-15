@@ -18,8 +18,11 @@ public struct DTextRowView: View {
     }
 
     public var body: some View {
-        Text(text)
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+        ZStack {
+            Text(text)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+        }
+        .contentShape(Rectangle())
     }
 }
 

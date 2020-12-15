@@ -43,6 +43,7 @@
 		C9C397322569423700763F33 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397312569423700763F33 /* UIColor+Extension.swift */; };
 		C9C397362569424F00763F33 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397352569424E00763F33 /* UIDevice+Extension.swift */; };
 		C9C3973A2569426600763F33 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C397392569426600763F33 /* View+Extension.swift */; };
+		C9D83CC325896648008808A9 /* DTextDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D83CC225896648008808A9 /* DTextDetailRowView.swift */; };
 		C9DA4A91258162C200F17516 /* DNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA4A90258162C200F17516 /* DNavigationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		C9C397312569423700763F33 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C9C397352569424E00763F33 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		C9C397392569426600763F33 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C9D83CC225896648008808A9 /* DTextDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTextDetailRowView.swift; sourceTree = "<group>"; };
 		C9DA4A90258162C200F17516 /* DNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,9 +330,10 @@
 		C9CB6F842579AB490034E975 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				C974A3D82579A6670068C8CB /* DEnumPicker.swift */,
+				C9D83CC225896648008808A9 /* DTextDetailRowView.swift */,
 				C9B0A2412579889500E67245 /* DTextRowView.swift */,
 				C9B0A247257988F500E67245 /* DTextToggleRowView.swift */,
-				C974A3D82579A6670068C8CB /* DEnumPicker.swift */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 			files = (
 				C9C396F92569403900763F33 /* DDismissKeyboardModifier.swift in Sources */,
 				C9C396D425693D2000763F33 /* DConstant.swift in Sources */,
+				C9D83CC325896648008808A9 /* DTextDetailRowView.swift in Sources */,
 				C90D40A3258830F00071DC1A /* NavigationLink+Extension.swift in Sources */,
 				C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */,
 				C9C396CE25693CD400763F33 /* DDate.swift in Sources */,
