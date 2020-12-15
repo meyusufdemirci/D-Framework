@@ -27,7 +27,7 @@ public extension DAppManager {
             }
         }
     }
-    
+
     class func showStorePage(appId: Int) {
         let parameters = [SKStoreProductParameterITunesItemIdentifier: appId]
 

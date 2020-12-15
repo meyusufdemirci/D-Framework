@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 public struct DTextDetailRowView: View {
 
     // MARK: Properties
@@ -38,3 +39,4 @@ struct DTextDetailRowView_Previews: PreviewProvider {
         DTextDetailRowView(text: "text", detail: "detail")
     }
 }
+#endif
