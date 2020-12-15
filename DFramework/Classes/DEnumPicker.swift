@@ -26,7 +26,7 @@ public struct DEnumPicker<T: Hashable & CaseIterable, V: View>: View {
     public var body: some View {
         Picker(selection: $selected, label: Text(title ?? "")) {
             ForEach(Array(T.allCases), id: \.self) {
-                mapping($0).tag($0)
+                self.mapping($0).tag($0)
             }
         }
     }

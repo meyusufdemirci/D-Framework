@@ -43,4 +43,31 @@ public extension View {
             content(value.wrappedValue!)
         }
     }
+
+    // USAGE
+//    @State var navigation: MoreNavigation?
+
+//    body {
+//        .navigation(item: $navigation, destination: presentNavigation)
+//    }
+
+//    @ViewBuilder
+//    func presentNavigation(_ navigation: MoreNavigation) -> some View {
+//        switch navigation {
+//        case .textUs:
+//            TextUsView()
+//        }
+//    }
+
+//    enum MoreNavigation: Int, Identifiable {
+//        case textUs
+//
+//        var id: Int { self.rawValue }
+//    }
+    func navigation<V: Identifiable, Destination: View>(
+        item: Binding<V?>,
+        destination: @escaping (V) -> Destination
+    ) -> some View {
+        background(NavigationLink(item: item, destination: destination))
+    }
 }

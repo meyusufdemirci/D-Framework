@@ -19,15 +19,21 @@ public extension DAppManager {
 
     #if os(iOS)
     class func showAppSettings() {
-        guard let appSettingsURL = URL(string: UIApplication.openSettingsURLString),
-              UIApplication.shared.canOpenURL(appSettingsURL) else { return }
-        UIApplication.shared.open(appSettingsURL)
+        guard let appSettingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
+        DispatchQueue.main.async {
+            if UIApplication.shared.canOpenURL(appSettingsURL) {
+                UIApplication.shared.open(appSettingsURL)
+            }
+        }
     }
 
     class func showStorePage(appId: Int) {
-        guard let storeUrl = URL(string: "itms-apps://itunes.apple.com/app/id\(appId)"),
-              UIApplication.shared.canOpenURL(storeUrl) else { return }
-        UIApplication.shared.open(storeUrl)
+        guard let storeUrl = URL(string: "itms-apps://itunes.apple.com/app/id\(appId)") else { return }
+        DispatchQueue.main.async {
+            if UIApplication.shared.canOpenURL(storeUrl) {
+                UIApplication.shared.open(storeUrl)
+            }
+        }
     }
     #endif
 }

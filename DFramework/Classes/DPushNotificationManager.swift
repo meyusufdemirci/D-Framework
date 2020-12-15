@@ -37,20 +37,22 @@ public class DPushNotificationManager {
 public extension DPushNotificationManager {
 
     #if os(iOS)
-    class func register(completion: @escaping(_ isAllowed: Bool) -> Void) {
+    class func register(completion: ((_ isAllowed: Bool) -> Void)? = nil) {
         UNUserNotificationCenter.current().requestAuthorization(
             options: [UNAuthorizationOptions.alert, UNAuthorizationOptions.badge, UNAuthorizationOptions.sound],
             completionHandler: { isSuccess, error in
                 if let error = error {
                     DLog.error("Notification registration failed: \(error.localizedDescription)")
-                    completion(false)
+                    completion?(false)
                     return
                 }
 
-                completion(isSuccess)
+                completion?(isSuccess)
             })
 
-        UIApplication.shared.registerForRemoteNotifications()
+        DispatchQueue.main.async {
+            UIApplication.shared.registerForRemoteNotifications()
+        }
     }
     #endif
 

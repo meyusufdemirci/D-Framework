@@ -12,6 +12,7 @@ public struct DTextToggleRowView: View {
     // MARK: Properties
 
     public let text: String
+
     @Binding public var isToggleOn: Bool
 
     public init(text: String, isToggleOn: Binding<Bool>) {

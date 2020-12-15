@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F374B614ACDE9B7B283A023 /* Pods_DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29776AC80E79F7C1B575D7C8 /* Pods_DFramework.framework */; };
 		2375DE7123EBD964645CBF48 /* Pods_DFramework_DFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */; };
+		C90D40A3258830F00071DC1A /* NavigationLink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D40A2258830F00071DC1A /* NavigationLink+Extension.swift */; };
 		C974A3D92579A6670068C8CB /* DEnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974A3D82579A6670068C8CB /* DEnumPicker.swift */; };
 		C9B0A2422579889500E67245 /* DTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0A2412579889500E67245 /* DTextRowView.swift */; };
 		C9B0A248257988F500E67245 /* DTextToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0A247257988F500E67245 /* DTextToggleRowView.swift */; };
@@ -62,6 +63,7 @@
 		B1682FB8AD7AC6EACFC37D5A /* Pods-DFramework-DFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework-DFrameworkTests.debug.xcconfig"; path = "Target Support Files/Pods-DFramework-DFrameworkTests/Pods-DFramework-DFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B32621E12E7312FA88B05361 /* Pods-DFramework-DFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework-DFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-DFramework-DFrameworkTests/Pods-DFramework-DFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8266FF4BA1213595B3B4EF2 /* Pods-DFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework.release.xcconfig"; path = "Target Support Files/Pods-DFramework/Pods-DFramework.release.xcconfig"; sourceTree = "<group>"; };
+		C90D40A2258830F00071DC1A /* NavigationLink+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationLink+Extension.swift"; sourceTree = "<group>"; };
 		C974A3D82579A6670068C8CB /* DEnumPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEnumPicker.swift; sourceTree = "<group>"; };
 		C9B0A2412579889500E67245 /* DTextRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTextRowView.swift; sourceTree = "<group>"; };
 		C9B0A247257988F500E67245 /* DTextToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTextToggleRowView.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				C9C39721256941D500763F33 /* Bundle+Extension.swift */,
 				C9C39725256941EE00763F33 /* Date+Extension.swift */,
 				C9C397292569420300763F33 /* Double+Extension.swift */,
+				C90D40A2258830F00071DC1A /* NavigationLink+Extension.swift */,
 				C9C3972D2569421A00763F33 /* NSNumber+Extension.swift */,
 				C9C397312569423700763F33 /* UIColor+Extension.swift */,
 				C9C397352569424E00763F33 /* UIDevice+Extension.swift */,
@@ -539,6 +542,7 @@
 			files = (
 				C9C396F92569403900763F33 /* DDismissKeyboardModifier.swift in Sources */,
 				C9C396D425693D2000763F33 /* DConstant.swift in Sources */,
+				C90D40A3258830F00071DC1A /* NavigationLink+Extension.swift in Sources */,
 				C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */,
 				C9C396CE25693CD400763F33 /* DDate.swift in Sources */,
 				C9DA4A91258162C200F17516 /* DNavigationManager.swift in Sources */,
