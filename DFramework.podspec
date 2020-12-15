@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
+  s.requires_arc = true
+
   s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
   s.resources = 'DFramework/Resources/*'
   
