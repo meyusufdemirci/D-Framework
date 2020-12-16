@@ -1,9 +1,9 @@
 # DFramework
 
-[![CI Status](https://img.shields.io/travis/demirciy/DFramework.svg?style=flat)](https://travis-ci.com/demirciy/DFramework)
-[![Version](https://img.shields.io/cocoapods/v/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
-[![License](https://img.shields.io/cocoapods/l/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
-[![Platform](https://img.shields.io/cocoapods/p/DFramework.svg?style=flat)](https://cocoapods.org/pods/DFramework)
+[![CI Status](https://travis-ci.com/demirciy/D-Framework.svg)](https://travis-ci.com/demirciy/D-Framework)
+[![Version](https://img.shields.io/cocoapods/v/DFramework.svg)](https://cocoapods.org/pods/DFramework)
+[![License](https://img.shields.io/cocoapods/l/DFramework.svg)](https://cocoapods.org/pods/DFramework)
+[![Platform](https://img.shields.io/cocoapods/p/DFramework.svg)](https://cocoapods.org/pods/DFramework)
 
 ## Requirements
 
