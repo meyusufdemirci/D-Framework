@@ -53,5 +53,12 @@ public extension DAppManager {
 //            }
 //        }
     }
+
+    class func showRateUs() {
+        guard let activeScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+
+        // TODO: Use appStoreOverlay in StoreKit
+        SKStoreReviewController.requestReview(in: activeScene)
+    }
     #endif
 }
