@@ -14,7 +14,7 @@ public class DIapManager: NSObject {
     public static let shared = DIapManager()
 
     public var purchaseResult: ((Swift.Result<SKProduct?, DIapError>) -> Void)?
-    public var restoreResult: ((DIapError) -> Void)?
+    public var restoreResult: ((Swift.Result<SKProduct?, DIapError>) -> Void)?
 
     public private(set) var availableProducts: [SKProduct] = []
 
@@ -53,6 +53,11 @@ public extension DIapManager {
 
         DLog.info("Purchase has been started for: \(productId)")
     }
+
+    func restorePurchase() {
+        SKPaymentQueue.default().add(self)
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
 }
 
 // MARK: - SKProductsRequestDelegate
@@ -87,7 +92,7 @@ extension DIapManager: SKPaymentTransactionObserver {
         case .purchased:
             SKPaymentQueue.default().finishTransaction(transaction)
 
-            let product = availableProducts.first { $0.productIdentifier == transaction.payment.productIdentifier }
+            let product = availableProductByProductId(transaction.payment.productIdentifier)
 
             self.purchaseResult?(.success(product))
 
@@ -98,6 +103,10 @@ extension DIapManager: SKPaymentTransactionObserver {
 
         case .restored:
             SKPaymentQueue.default().finishTransaction(transaction)
+
+            let product = availableProductByProductId(transaction.payment.productIdentifier)
+
+            self.restoreResult?(.success(product))
 
         case .deferred:
             break
@@ -112,7 +121,7 @@ extension DIapManager: SKPaymentTransactionObserver {
     public func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
         DLog.error(error.localizedDescription)
 
-        self.restoreResult?(.restoreFailed)
+        self.restoreResult?(.failure(.restoreFailed))
     }
 }
 
@@ -131,5 +140,9 @@ private extension DIapManager {
 
     func fetchAvailableProducts() {
         productsRequest?.start()
+    }
+
+    func availableProductByProductId(_ id: String) -> SKProduct? {
+        availableProducts.first { $0.productIdentifier == id }
     }
 }
