@@ -10,7 +10,7 @@ public extension Double {
     /// Cleans decimal numbers
     ///
     /// - Parameter decimalCount: the number count after dot
-    /// - Returns: 3.14159 -> 3
+    /// - Returns: 3.14159 --> 3
     func cleanDecimal(decimalCount: Int = 0) -> Double {
         Double(String(format: "%.\(decimalCount)f", self)) ?? self
     }

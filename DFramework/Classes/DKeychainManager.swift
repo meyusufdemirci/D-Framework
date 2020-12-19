@@ -5,6 +5,10 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
+// Example Usage
+// SET --> DKeychainManager.shared["userId"] = "1234"
+// GET --> let userId = DKeychainManager.shared["userId"]
+
 public class DKeychainManager {
 
     // MARK: Properties

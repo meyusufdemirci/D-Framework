@@ -9,6 +9,7 @@
 import Combine
 import SwiftUI
 
+// To align keyboard by input view such as textfield
 public struct DAdaptKeyboardByInputModifier: ViewModifier {
 
     // MARK: Properties

@@ -8,6 +8,7 @@
 #if os(iOS)
 import SwiftUI
 
+// To dismiss keyboard when tapped around
 public struct DDismissKeyboardModifier: ViewModifier {
 
     public init() {}
