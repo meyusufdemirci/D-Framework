@@ -13,6 +13,7 @@ public class DIapManager: NSObject {
 
     public static let shared = DIapManager()
 
+    public var setProductIdsResult: ((Swift.Result<[SKProduct], DIapError>) -> Void)?
     public var purchaseResult: ((Swift.Result<SKProduct?, DIapError>) -> Void)?
     public var restoreResult: ((Swift.Result<SKProduct?, DIapError>) -> Void)?
 
@@ -66,6 +67,8 @@ extension DIapManager: SKProductsRequestDelegate {
 
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         availableProducts = response.products
+
+        setProductIdsResult?(.success(availableProducts))
     }
 }
 

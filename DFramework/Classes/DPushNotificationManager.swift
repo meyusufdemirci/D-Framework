@@ -36,6 +36,12 @@ public class DPushNotificationManager {
 
 public extension DPushNotificationManager {
 
+    class func authStatus(completion: @escaping(_ status: UNAuthorizationStatus) -> Void) {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            completion(settings.authorizationStatus)
+        }
+    }
+
     #if os(iOS)
     class func register(completion: ((_ isAllowed: Bool) -> Void)? = nil) {
         UNUserNotificationCenter.current().requestAuthorization(
@@ -54,15 +60,7 @@ public extension DPushNotificationManager {
             UIApplication.shared.registerForRemoteNotifications()
         }
     }
-    #endif
 
-    class func authStatus(completion: @escaping(_ status: UNAuthorizationStatus) -> Void) {
-        UNUserNotificationCenter.current().getNotificationSettings { settings in
-            completion(settings.authorizationStatus)
-        }
-    }
-
-    #if os(iOS)
     class func sendLocalNotification(title: String = "Test title",
                                      body: String = "Test body",
                                      userInfo: [AnyHashable: Any] = [:]) {

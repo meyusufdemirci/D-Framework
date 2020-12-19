@@ -11,6 +11,10 @@ public class DUtil {}
 
 public extension DUtil {
 
+    class func randomNumber(min: Int, max: Int) -> Int {
+        Int(arc4random_uniform(UInt32(max + 1)) + UInt32(min))
+    }
+
     class func randomString(length: Int) -> String {
         let letters: String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String((0 ..< length).map { _ in letters.randomElement()! })
