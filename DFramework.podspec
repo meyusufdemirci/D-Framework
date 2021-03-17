@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DFramework'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A base framework is for iOS, macOS, watchOS and tvOS development.'
 
   s.description      = <<-DESC
