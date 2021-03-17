@@ -27,5 +27,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
   s.resources = 'DFramework/Resources/*'
+
+  s.dependency 'RxAnimated'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxDataSources'
+  s.dependency 'RxGesture'
+  s.dependency 'RxSwift'
+  s.dependency 'SnapKit'
   
 end

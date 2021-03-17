@@ -52,4 +52,6 @@ disabled_rules:
 - force_try
 - identifier_name
 - large_tuple
+- multiline_arguments
+- strict_fileprivate
 - weak_delegate
