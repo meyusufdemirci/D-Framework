@@ -5,7 +5,7 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-public struct DSDate {
+public struct DDate {
 
     // MARK: Properties
 
@@ -19,13 +19,14 @@ public struct DSDate {
     }
 
     public init(date: String, format: String) {
-        self.date = formatter.date(from: format)!
+        formatter.dateFormat = format
+        self.date = formatter.date(from: date)!
     }
 }
 
 // MARK: - Publics
 
-public extension DSDate {
+public extension DDate {
 
     func custom(dateFormat: String) -> String {
         formatter.dateFormat = dateFormat
@@ -45,7 +46,7 @@ public extension DSDate {
 
 // MARK: - Privates
 
-private extension DSDate {
+private extension DDate {
 
     func toString() -> String {
         formatter.string(from: date)

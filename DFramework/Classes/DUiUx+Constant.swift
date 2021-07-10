@@ -15,7 +15,7 @@ public extension DConstant {
         public static let shadowColor: CGColor = UIColor.black.cgColor
         public static let shadowOpacity: Float = 0.05
         public static let margin: Int = 16
-        public static let textFieldHeight: Int = 48
+        public static let textFieldHeight: Int = 44
 
         public static let tapLongPressGestureTransform: CGAffineTransform = .init(scaleX: 0.85, y: 0.85)
 

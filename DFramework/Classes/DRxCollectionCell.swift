@@ -16,7 +16,7 @@ open class DRxCollectionCell: UICollectionViewCell {
 
     public var disposeBag: DisposeBag = .init()
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
 
         setup()
