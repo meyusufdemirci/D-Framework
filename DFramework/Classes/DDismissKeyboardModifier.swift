@@ -5,7 +5,6 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-#if os(iOS)
 import SwiftUI
 
 // To dismiss keyboard when tapped around
@@ -33,4 +32,3 @@ public extension View {
         modifier(DDismissKeyboardModifier())
     }
 }
-#endif

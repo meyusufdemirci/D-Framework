@@ -5,12 +5,8 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-#if os(iOS)
 import StoreKit
 import UIKit
-#else
-import Foundation
-#endif
 
 public class DAppManager {}
 
@@ -18,7 +14,6 @@ public class DAppManager {}
 
 public extension DAppManager {
 
-    #if os(iOS)
     class func showAppSettings() {
         guard let appSettingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
         DispatchQueue.main.async {
@@ -60,5 +55,4 @@ public extension DAppManager {
         // TODO: Use appStoreOverlay in StoreKit
         SKStoreReviewController.requestReview(in: activeScene)
     }
-    #endif
 }

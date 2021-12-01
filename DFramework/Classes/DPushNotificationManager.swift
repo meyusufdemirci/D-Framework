@@ -5,9 +5,7 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-#if os(iOS)
 import UIKit
-#endif
 import UserNotifications
 
 public extension NSNotification.Name {
@@ -42,7 +40,6 @@ public extension DPushNotificationManager {
         }
     }
 
-    #if os(iOS)
     class func register(completion: ((_ isAllowed: Bool) -> Void)? = nil) {
         UNUserNotificationCenter.current().requestAuthorization(
             options: [UNAuthorizationOptions.alert, UNAuthorizationOptions.badge, UNAuthorizationOptions.sound],
@@ -83,5 +80,4 @@ public extension DPushNotificationManager {
             }
         })
     }
-    #endif
 }

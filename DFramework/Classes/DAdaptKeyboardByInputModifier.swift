@@ -5,7 +5,6 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-#if os(iOS)
 import Combine
 import SwiftUI
 
@@ -60,4 +59,3 @@ public extension View {
         modifier(DAdaptKeyboardByInputModifier())
     }
 }
-#endif

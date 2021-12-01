@@ -1,64 +1,24 @@
 PODS:
-  - Differentiator (5.0.0)
-  - RxAnimated (0.9.0):
-    - RxAnimated/Core (= 0.9.0)
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxAnimated/Core (0.9.0):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxCocoa (6.1.0):
-    - RxRelay (= 6.1.0)
-    - RxSwift (= 6.1.0)
-  - RxDataSources (5.0.0):
-    - Differentiator (~> 5.0)
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxGesture (4.0.0):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxRelay (6.1.0):
-    - RxSwift (= 6.1.0)
-  - RxSwift (6.1.0)
   - SnapKit (5.0.1)
-  - SwiftGen (6.4.0)
-  - SwiftLint (0.42.0)
+  - SwiftGen (6.5.1)
+  - SwiftLint (0.45.1)
 
 DEPENDENCIES:
-  - RxAnimated
-  - RxCocoa
-  - RxDataSources
-  - RxGesture
-  - RxSwift
   - SnapKit
   - SwiftGen
   - SwiftLint
 
 SPEC REPOS:
   trunk:
-    - Differentiator
-    - RxAnimated
-    - RxCocoa
-    - RxDataSources
-    - RxGesture
-    - RxRelay
-    - RxSwift
     - SnapKit
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  RxAnimated: e53fb66cafc0539faf881b734f7412a624527f0a
-  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
-  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
-  RxGesture: b095a86df33d199a33b46a644e7c58bdef8ab035
-  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
-  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
-  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+  SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
 
-PODFILE CHECKSUM: 1a186ec805d24335d6ce0bedf3920e23e412519d
+PODFILE CHECKSUM: 132e8ab61575a621350ab95fc2458b3321a23896
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2

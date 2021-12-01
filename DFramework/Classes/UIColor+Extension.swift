@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-#if os(iOS)
 public extension UIColor {
 
     func toColor() -> Color {
         Color(self)
     }
 }
-#endif

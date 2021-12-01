@@ -5,13 +5,8 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
-#if os(iOS)
 import UIKit
-#else
-import Foundation
-#endif
 
-#if os(iOS)
 public extension UIDevice {
 
     var deviceModelCode: String? {
@@ -27,5 +22,8 @@ public extension UIDevice {
                         count: Int(_SYS_NAMELEN)),
             encoding: .ascii)!.trimmingCharacters(in: .controlCharacters)
     }
+
+    var hasBottomNotch: Bool {
+        UIWindow.activeWindow?.safeAreaInsets.bottom ?? 0 > 0
+    }
 }
-#endif
