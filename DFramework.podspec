@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DFramework'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A base framework for iOS development.'
 
   s.description      = <<-DESC
@@ -15,8 +15,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://yusufdemirci.dev/open-source/d-framework'
 
   s.ios.deployment_target = '14.0'
-
-  # s.source_files = 'DFramework/Classes/**/*'
 
   s.swift_version = '5.0'
 
