@@ -11,6 +11,7 @@
 		2375DE7123EBD964645CBF48 /* Pods_DFramework_DFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */; };
 		8814B6952757618B00A25D58 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814B6942757618B00A25D58 /* UIWindow+Extension.swift */; };
 		8814B697275761EE00A25D58 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814B696275761EE00A25D58 /* UIApplication+Extension.swift */; };
+		885F80F82768C019009AD4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885F80F72768C019009AD4D1 /* Assets.xcassets */; };
 		88F38E67275765D2005D28CB /* ATTrackingManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38E66275765D2005D28CB /* ATTrackingManager+Extension.swift */; };
 		88F38E69275765F4005D28CB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38E68275765F4005D28CB /* Color+Extension.swift */; };
 		C90D40A3258830F00071DC1A /* NavigationLink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D40A2258830F00071DC1A /* NavigationLink+Extension.swift */; };
@@ -27,7 +28,6 @@
 		C9C3965A2569359600763F33 /* DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C396502569359600763F33 /* DFramework.framework */; };
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
-		C9C396952569396B00763F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C396942569396B00763F33 /* Assets.xcassets */; };
 		C9C396B225693ACA00763F33 /* DAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B125693ACA00763F33 /* DAppManager.swift */; };
 		C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B525693B1300763F33 /* DKeychainManager.swift */; };
 		C9C396BA25693B6600763F33 /* DLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B925693B6600763F33 /* DLanguageManager.swift */; };
@@ -74,6 +74,7 @@
 		8634BF3BD45E7D8C0A610CDE /* Pods-DFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework.debug.xcconfig"; path = "Target Support Files/Pods-DFramework/Pods-DFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		8814B6942757618B00A25D58 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		8814B696275761EE00A25D58 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		885F80F72768C019009AD4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F38E66275765D2005D28CB /* ATTrackingManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ATTrackingManager+Extension.swift"; sourceTree = "<group>"; };
 		88F38E68275765F4005D28CB /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFramework_DFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +98,6 @@
 		C9C396592569359600763F33 /* DFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		C9C396942569396B00763F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C396B125693ACA00763F33 /* DAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAppManager.swift; sourceTree = "<group>"; };
 		C9C396B525693B1300763F33 /* DKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKeychainManager.swift; sourceTree = "<group>"; };
 		C9C396B925693B6600763F33 /* DLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguageManager.swift; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C39683256938EC00763F33 /* Localizable.strings */,
-				C9C396942569396B00763F33 /* Assets.xcassets */,
+				885F80F72768C019009AD4D1 /* Assets.xcassets */,
 				C9C396912569394A00763F33 /* CodeGeneration */,
 			);
 			path = Resources;
@@ -478,7 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C396952569396B00763F33 /* Assets.xcassets in Resources */,
+				885F80F82768C019009AD4D1 /* Assets.xcassets in Resources */,
 				C9C39684256938EC00763F33 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
