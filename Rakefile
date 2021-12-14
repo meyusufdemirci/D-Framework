@@ -52,5 +52,9 @@ task :create_xcframework do
     -framework xcframework/DFramework-iOS-Sim.xcarchive/Products/Library/Frameworks/DFramework.framework \
     -output xcframework/DFramework.xcframework'
     puts "DFramework's xcframework output was created successfully.".green
-    sh 'open .'
+
+    sh 'rm -rf xcframework/DFramework-iOS.xcarchive'
+    sh 'rm -rf xcframework/DFramework-iOS-Sim.xcarchive'
+
+    sh 'open xcframework/'
 end  
