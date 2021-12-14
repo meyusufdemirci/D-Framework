@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F374B614ACDE9B7B283A023 /* Pods_DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29776AC80E79F7C1B575D7C8 /* Pods_DFramework.framework */; };
 		2375DE7123EBD964645CBF48 /* Pods_DFramework_DFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */; };
+		2E63D1DC2768BFB200811664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63D1DB2768BFB200811664 /* Assets.xcassets */; };
 		C90D40A3258830F00071DC1A /* NavigationLink+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D40A2258830F00071DC1A /* NavigationLink+Extension.swift */; };
 		C974A3D92579A6670068C8CB /* DEnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974A3D82579A6670068C8CB /* DEnumPicker.swift */; };
 		C9B0A2422579889500E67245 /* DTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0A2412579889500E67245 /* DTextRowView.swift */; };
@@ -16,7 +16,6 @@
 		C9C3965A2569359600763F33 /* DFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C396502569359600763F33 /* DFramework.framework */; };
 		C9C396612569359600763F33 /* DFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C396532569359600763F33 /* DFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C39684256938EC00763F33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C39683256938EC00763F33 /* Localizable.strings */; };
-		C9C396952569396B00763F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C396942569396B00763F33 /* Assets.xcassets */; };
 		C9C396B225693ACA00763F33 /* DAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B125693ACA00763F33 /* DAppManager.swift */; };
 		C9C396B625693B1300763F33 /* DKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B525693B1300763F33 /* DKeychainManager.swift */; };
 		C9C396BA25693B6600763F33 /* DLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C396B925693B6600763F33 /* DLanguageManager.swift */; };
@@ -60,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		29776AC80E79F7C1B575D7C8 /* Pods_DFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E63D1DB2768BFB200811664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8634BF3BD45E7D8C0A610CDE /* Pods-DFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework.debug.xcconfig"; path = "Target Support Files/Pods-DFramework/Pods-DFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		A22D26608BD5F5E7D8CB78EB /* Pods_DFramework_DFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFramework_DFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1682FB8AD7AC6EACFC37D5A /* Pods-DFramework-DFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFramework-DFrameworkTests.debug.xcconfig"; path = "Target Support Files/Pods-DFramework-DFrameworkTests/Pods-DFramework-DFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,6 @@
 		C9C396592569359600763F33 /* DFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C396602569359600763F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C39683256938EC00763F33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		C9C396942569396B00763F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C396B125693ACA00763F33 /* DAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAppManager.swift; sourceTree = "<group>"; };
 		C9C396B525693B1300763F33 /* DKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKeychainManager.swift; sourceTree = "<group>"; };
 		C9C396B925693B6600763F33 /* DLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguageManager.swift; sourceTree = "<group>"; };
@@ -112,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F374B614ACDE9B7B283A023 /* Pods_DFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				C9C39683256938EC00763F33 /* Localizable.strings */,
-				C9C396942569396B00763F33 /* Assets.xcassets */,
 				C9C396912569394A00763F33 /* CodeGeneration */,
+				2E63D1DB2768BFB200811664 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -444,7 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C396952569396B00763F33 /* Assets.xcassets in Resources */,
+				2E63D1DC2768BFB200811664 /* Assets.xcassets in Resources */,
 				C9C39684256938EC00763F33 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +727,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WL6ERJVJSX;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -758,7 +756,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WL6ERJVJSX;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

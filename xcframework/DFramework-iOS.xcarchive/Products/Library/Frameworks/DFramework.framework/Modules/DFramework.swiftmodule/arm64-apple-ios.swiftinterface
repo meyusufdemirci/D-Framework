@@ -1,0 +1,295 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DFramework
+import Combine
+@_exported import DFramework
+import Foundation
+import StoreKit
+import Swift
+import SwiftUI
+import UIKit
+import UserNotifications
+import _Concurrency
+public struct DDismissKeyboardModifier : SwiftUI.ViewModifier {
+  public init()
+  @_Concurrency.MainActor(unsafe) public func body(content: DFramework.DDismissKeyboardModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework24DDismissKeyboardModifierV4body7contentQr7SwiftUI05_ViewD8_ContentVyACG_tF", 0) __
+}
+extension SwiftUI.View {
+  public func dDismissKeyboardModifier() -> some SwiftUI.View
+  
+}
+@_hasMissingDesignatedInitializers public class DConstant {
+  @objc deinit
+}
+public struct DTextDetailRowView : SwiftUI.View {
+  public let text: Swift.String
+  public let detail: Swift.String
+  public init(text: Swift.String, detail: Swift.String)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework18DTextDetailRowViewV4bodyQrvp", 0) __
+}
+extension Swift.Array {
+  public func random() -> (element: Element, index: Swift.Int)
+}
+extension Swift.Array where Element : Swift.Identifiable {
+  public mutating func replace(_ newElement: Element)
+  public mutating func remove(_ newElement: Element)
+}
+extension SwiftUI.NavigationLink where Label == SwiftUI.EmptyView {
+  public init?<V>(item: SwiftUI.Binding<V?>, destination: @escaping (V) -> Destination) where V : Swift.Identifiable
+}
+@_hasMissingDesignatedInitializers public class DKeychainManager {
+  public static let shared: DFramework.DKeychainManager
+  open subscript(key: Swift.String) -> Swift.String? {
+    get
+    set
+  }
+  @objc deinit
+}
+public struct DSDate {
+  public var date: Foundation.Date
+  public var dateSeparator: Swift.String
+  public var timeSeparator: Swift.String
+  public init(date: Foundation.Date = Date())
+  public init(date: Swift.String, format: Swift.String)
+}
+extension DFramework.DSDate {
+  public func custom(dateFormat: Swift.String) -> Swift.String
+  public func raw() -> Swift.String
+  public func userFriendly() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class DNavigationManager {
+  @objc deinit
+}
+extension DFramework.DNavigationManager {
+  public class func setRootView<T>(window: UIKit.UIWindow, view: T) where T : SwiftUI.View
+}
+public class DPushNotification {
+  public var alert: Swift.String?
+  public var sound: Swift.String?
+  public init(_ userInfo: [Swift.AnyHashable : Any])
+  @objc deinit
+}
+public struct DTextToggleRowView : SwiftUI.View {
+  public let text: Swift.String
+  @SwiftUI.Binding @_projectedValueProperty($isToggleOn) public var isToggleOn: Swift.Bool {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $isToggleOn: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  public init(text: Swift.String, isToggleOn: SwiftUI.Binding<Swift.Bool>)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework18DTextToggleRowViewV4bodyQrvp", 0) __
+}
+public enum DError : Swift.Error {
+  case general
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public static func == (a: DFramework.DError, b: DFramework.DError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let didReceiveRemoteNotification: Foundation.Notification.Name
+}
+@_hasMissingDesignatedInitializers public class DPushNotificationManager {
+  public var didReceiveRemoteNotification: ((_ userInfo: [Swift.AnyHashable : Any]) -> Swift.Void)?
+  @objc deinit
+}
+extension DFramework.DPushNotificationManager {
+  public class func authStatus(completion: @escaping (_ status: UserNotifications.UNAuthorizationStatus) -> Swift.Void)
+  public class func register(completion: ((_ isAllowed: Swift.Bool) -> Swift.Void)? = nil)
+  public class func sendLocalNotification(title: Swift.String = "Test title", body: Swift.String = "Test body", userInfo: [Swift.AnyHashable : Any] = [:])
+}
+@_hasMissingDesignatedInitializers public class DLog {
+  @objc deinit
+}
+extension DFramework.DLog {
+  public class func error(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func info(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func debug(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func verbose(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func warning(_ object: Any?, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func severe(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func custom(_ log: Swift.String)
+}
+public protocol DEnumPickerDisplayable {
+  var displayValue: Swift.String { get }
+}
+public struct DEnumPicker<T, V> : SwiftUI.View where T : Swift.CaseIterable, T : Swift.Hashable, V : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($selected) public var selected: T {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $selected: SwiftUI.Binding<T> {
+    get
+  }
+  public var title: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework11DEnumPickerV4bodyQrvp", 0) __<T, V>
+}
+extension DFramework.DEnumPicker where T : DFramework.DEnumPickerDisplayable, V == SwiftUI.Text {
+  public init(selected: SwiftUI.Binding<T>, title: Swift.String? = nil)
+}
+@_hasMissingDesignatedInitializers public class DAppManager {
+  @objc deinit
+}
+extension DFramework.DAppManager {
+  public class func showAppSettings()
+  public class func showStorePage(appId: Swift.Int)
+  public class func showRateUs()
+}
+extension SwiftUI.View {
+  public func sheet<Content, Value>(using value: SwiftUI.Binding<Value?>, @SwiftUI.ViewBuilder content: @escaping (Value) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  
+  public func navigation<V, Destination>(item: SwiftUI.Binding<V?>, destination: @escaping (V) -> Destination) -> some SwiftUI.View where V : Swift.Identifiable, Destination : SwiftUI.View
+  
+}
+extension Foundation.NSNumber {
+  public func ratio(_ ratio: Swift.Double) -> Foundation.NSNumber
+}
+extension Foundation.Date {
+  public var day: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var year: Swift.Int {
+    get
+  }
+  public func totalDistance(to date: Foundation.Date, resultIn component: Foundation.Calendar.Component) -> Swift.Int?
+}
+extension Foundation.Bundle {
+  public var versionNo: Swift.String? {
+    get
+  }
+  public var buildNo: Swift.String? {
+    get
+  }
+}
+public struct DTextRowView : SwiftUI.View {
+  public let text: Swift.String
+  public init(text: Swift.String)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework12DTextRowViewV4bodyQrvp", 0) __
+}
+public enum DIapError : Swift.Error {
+  case productCouldNotFindInAvailableProducts
+  case canNotMakePurchase
+  case paymentFailed
+  case restoreFailed
+  public static func == (a: DFramework.DIapError, b: DFramework.DIapError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIColor {
+  public func toColor() -> SwiftUI.Color
+}
+@_hasMissingDesignatedInitializers public class DLanguageManager {
+  public static let language: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DUtil {
+  @objc deinit
+}
+extension DFramework.DUtil {
+  public class func randomNumber(min: Swift.Int, max: Swift.Int) -> Swift.Int
+  public class func randomString(length: Swift.Int) -> Swift.String
+  public class func isForceUpdateRequired(appVersion: Swift.String = Bundle.main.versionNo!, minVersion: Swift.String) -> Swift.Bool
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var deviceModelCode: Swift.String? {
+    get
+  }
+}
+extension Swift.Double {
+  public func cleanDecimal(decimalCount: Swift.Int = 0) -> Swift.Double
+}
+public protocol DView : SwiftUI.View {
+  func onAppear()
+}
+extension DFramework.DView {
+  public func onAppear()
+}
+public enum DLanguage : Swift.String {
+  case english
+  case turkish
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension DFramework.DConstant {
+  @_hasMissingDesignatedInitializers public class Date {
+    public static let dateSeparator: Swift.String
+    public static let timeSeparator: Swift.String
+    @objc deinit
+  }
+}
+@objc @_inheritsConvenienceInitializers public class DIapManager : ObjectiveC.NSObject {
+  public static let shared: DFramework.DIapManager
+  public var setProductIdsResult: ((Swift.Result<[StoreKit.SKProduct], DFramework.DIapError>) -> Swift.Void)?
+  public var purchaseResult: ((Swift.Result<StoreKit.SKProduct?, DFramework.DIapError>) -> Swift.Void)?
+  public var restoreResult: ((Swift.Result<StoreKit.SKProduct?, DFramework.DIapError>) -> Swift.Void)?
+  public var availableProducts: [StoreKit.SKProduct] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension DFramework.DIapManager {
+  public func setProductIds(_ ids: [Swift.String])
+  public func purchase(productId: Swift.String)
+  public func restorePurchase()
+}
+extension DFramework.DIapManager : StoreKit.SKProductsRequestDelegate {
+  @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
+}
+extension DFramework.DIapManager : StoreKit.SKRequestDelegate {
+  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
+}
+extension DFramework.DIapManager : StoreKit.SKPaymentTransactionObserver {
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
+  @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
+}
+public struct DAdaptKeyboardByInputModifier : SwiftUI.ViewModifier {
+  @_Concurrency.MainActor(unsafe) public func body(content: DFramework.DAdaptKeyboardByInputModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s10DFramework29DAdaptKeyboardByInputModifierV4body7contentQr7SwiftUI05_ViewF8_ContentVyACG_tF", 0) __
+}
+extension SwiftUI.View {
+  public func dAdaptKeyboardByInputModifier() -> some SwiftUI.View
+  
+}
+extension DFramework.DError : Swift.Equatable {}
+extension DFramework.DError : Swift.Hashable {}
+extension DFramework.DIapError : Swift.Equatable {}
+extension DFramework.DIapError : Swift.Hashable {}
+extension DFramework.DLanguage : Swift.Equatable {}
+extension DFramework.DLanguage : Swift.Hashable {}
+extension DFramework.DLanguage : Swift.RawRepresentable {}
