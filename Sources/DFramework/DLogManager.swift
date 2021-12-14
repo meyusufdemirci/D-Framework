@@ -5,6 +5,8 @@
 //  Created by Yusuf Demirci on 21.11.20.
 //
 
+import Foundation
+
 private enum LogType: String {
     case error = "[‼️]"
     case info = "[ℹ️]"

@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
   # s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
   # s.resources = 'DFramework/Resources/*'
 
-  s.dependency 'SnapKit'
+  # s.dependency 'SnapKit'
   
 end
