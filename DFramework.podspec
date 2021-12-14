@@ -16,15 +16,17 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '14.0'
 
-  s.source_files = 'DFramework/Classes/**/*'
+  # s.source_files = 'DFramework/Classes/**/*'
 
   s.swift_version = '5.0'
 
   s.requires_arc = true
 
-  s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
-  s.resources = 'DFramework/Resources/*'
+  s.source_files = 'Sources/DFramework/**/*'
 
-  s.dependency 'SnapKit'
+  # s.source_files = 'DFramework/Classes/**/*', 'DFramework/Resources/CodeGeneration/*'
+  # s.resources = 'DFramework/Resources/*'
+
+  # s.dependency 'SnapKit'
   
 end
