@@ -14,7 +14,7 @@ public enum DError: Error {
         switch self {
         case .general:
             return ""
-//            return Localized.DError.general
+//            return Localized.DError.general // TODO: Add localization
         }
     }
 }
