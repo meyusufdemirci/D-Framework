@@ -14,13 +14,15 @@ public struct DDate {
     public var date: Date
     public var dateSeparator: String = DConstant.Date.dateSeparator
     public var timeSeparator: String = DConstant.Date.timeSeparator
-    private let formatter = DateFormatter()
+    private let formatter: DateFormatter
 
-    public init(date: Date = Date()) {
+    public init(date: Date = Date(), formatter: DateFormatter = .init()) {
         self.date = date
+        self.formatter = formatter
     }
 
-    public init(date: String, format: String) {
+    public init(date: String, format: String, formatter: DateFormatter = .init()) {
+        self.formatter = formatter
         formatter.dateFormat = format
         self.date = formatter.date(from: date)!
     }
