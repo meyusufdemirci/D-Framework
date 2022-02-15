@@ -11,10 +11,11 @@ public struct DDate {
 
     // MARK: Properties
 
-    public var date: Date
+    public let date: Date
+    public let formatter: DateFormatter
+
     public var dateSeparator: String = DConstant.Date.dateSeparator
     public var timeSeparator: String = DConstant.Date.timeSeparator
-    private let formatter: DateFormatter
 
     public init(date: Date = Date(), formatter: DateFormatter = .init()) {
         self.date = date
@@ -46,11 +47,6 @@ public extension DDate {
         formatter.dateFormat = "dd\(dateSeparator)MM\(dateSeparator)yyyy HH\(timeSeparator)mm"
         return toString()
     }
-}
-
-// MARK: - Privates
-
-private extension DDate {
 
     func toString() -> String {
         formatter.string(from: date)
