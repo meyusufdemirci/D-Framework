@@ -14,6 +14,10 @@ public extension UIImage {
         return .init(data: data)
     }
 
+    func compress(quality: DImageQuality) -> Data? {
+        self.jpegData(compressionQuality: quality.rawValue)
+    }
+
     func sizeAsByte() -> Int {
         self.pngData()?.sizeAsByte() ?? 0
     }
