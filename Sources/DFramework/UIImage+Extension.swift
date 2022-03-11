@@ -15,11 +15,11 @@ public extension UIImage {
     }
 
     func sizeAsByte() -> Int {
-        self.pngData()?.count ?? 0
+        self.pngData()?.sizeAsByte() ?? 0
     }
 
     func sizeAsMb() -> Double {
-        Double(self.sizeAsByte()) / pow(1024, 2)
+        self.pngData()?.sizeAsMb() ?? 0
     }
 
     func orientation() -> DImageOrientation {
