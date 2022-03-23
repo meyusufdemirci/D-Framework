@@ -61,4 +61,8 @@ public extension DUtil {
         activityController.popoverPresentationController?.sourceView = rootController?.view
         rootController?.present(activityController, animated: true)
     }
+
+    static func hideKeyboard() {
+        UIWindow.activeWindow?.endEditing(true)
+    }
 }

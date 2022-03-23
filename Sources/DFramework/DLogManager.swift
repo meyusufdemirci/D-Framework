@@ -28,7 +28,7 @@ public class DLog {
         return formatter
     }
     private static let logPrefix: String = "DSLogManager:"
-    private static let dateFormat: String = "hh:mm:ss"
+    private static let dateFormat: String = "hh:mm:ss:SSS"
     private static var isLoggingEnabled: Bool {
         #if DEBUG
         return true
