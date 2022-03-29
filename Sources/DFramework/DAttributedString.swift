@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  DAttributedString.swift
 //  
 //
 //  Created by Yusuf Demirci on 3.03.2022.

@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  DImagePickerController.swift
 //  
 //
 //  Created by Yusuf Demirci on 3.03.2022.

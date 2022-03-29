@@ -12,13 +12,18 @@ let package = Package(
             targets: ["DFramework"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(
+            name: "SnapKit",
+            url: "https://github.com/SnapKit/SnapKit.git",
+            from: "5.0.1"
+        )
     ],
     targets: [
         .target(
             name: "DFramework",
-            dependencies: []),
+            dependencies: [
+                "SnapKit"
+            ]),
         .testTarget(
             name: "DFrameworkTests",
             dependencies: ["DFramework"]),

@@ -10,7 +10,7 @@ import Foundation
 public enum DError: Error {
     case general
 
-    public var localizedDescription: String {
+    public var userFriendlyDescription: String {
         switch self {
         case .general:
             return ""

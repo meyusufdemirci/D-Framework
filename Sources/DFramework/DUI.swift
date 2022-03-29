@@ -26,6 +26,7 @@ public struct DUI {
     public static let borderWidth2: CGFloat = 2
 
     public static let animationDuration1: TimeInterval = 0.25
+    public static let animationDuration2: TimeInterval = 0.10
 
     public static let shadowColor1: CGColor = UIColor.black.cgColor
     public static let shadowOpacity1: Float = 0.05
@@ -33,4 +34,6 @@ public struct DUI {
     public static let textFieldHeight1: Int = 50
     
     public static let buttonHeight1: Int = 50
+
+    static let transparentAlpha1: CGFloat = 0.5
 }
