@@ -13,7 +13,11 @@ public extension Data {
         self.count
     }
 
+    func sizeAsKb() -> Double {
+        Double(self.sizeAsByte()) / 1024
+    }
+
     func sizeAsMb() -> Double {
-        Double(self.sizeAsByte()) / pow(1024, 2)
+        Double(self.sizeAsKb()) / 1024
     }
 }
