@@ -9,8 +9,17 @@ import UIKit
 
 public extension UIImage {
 
+    func compress(quality: CGFloat) -> UIImage? {
+        guard let data = self.jpegData(compressionQuality: quality) else { return nil }
+        return .init(data: data)
+    }
+
+    func compress(quality: CGFloat) -> Data? {
+        self.jpegData(compressionQuality: quality)
+    }
+
     func compress(quality: DImageQuality) -> UIImage? {
-        guard let data = jpegData(compressionQuality: quality.rawValue) else { return nil }
+        guard let data = self.jpegData(compressionQuality: quality.rawValue) else { return nil }
         return .init(data: data)
     }
 
