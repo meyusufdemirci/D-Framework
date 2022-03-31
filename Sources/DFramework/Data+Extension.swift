@@ -9,15 +9,15 @@ import Foundation
 
 public extension Data {
 
-    func sizeAsByte() -> Int {
-        self.count
+    func sizeAsByte() -> Double {
+        .init(self.count)
     }
 
     func sizeAsKb() -> Double {
-        Double(self.sizeAsByte()) / 1024
+        self.sizeAsByte() / 1024
     }
 
     func sizeAsMb() -> Double {
-        Double(self.sizeAsKb()) / 1024
+        self.sizeAsKb() / 1024
     }
 }

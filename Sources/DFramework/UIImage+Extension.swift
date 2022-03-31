@@ -18,8 +18,12 @@ public extension UIImage {
         self.jpegData(compressionQuality: quality.rawValue)
     }
 
-    func sizeAsByte() -> Int {
+    func sizeAsByte() -> Double {
         self.pngData()?.sizeAsByte() ?? 0
+    }
+
+    func sizeAsKb() -> Double {
+        self.pngData()?.sizeAsKb() ?? 0
     }
 
     func sizeAsMb() -> Double {
