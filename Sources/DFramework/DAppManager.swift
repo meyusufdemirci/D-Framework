@@ -14,7 +14,7 @@ public class DAppManager {}
 
 public extension DAppManager {
 
-    class func showAppSettings() {
+    static func showAppSettings() {
         guard let appSettingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
         DispatchQueue.main.async {
             if UIApplication.shared.canOpenURL(appSettingsURL) {
@@ -23,7 +23,7 @@ public extension DAppManager {
         }
     }
 
-    class func showStorePage(appId: Int) {
+    static func showStorePage(appId: Int) {
         let parameters = [SKStoreProductParameterITunesItemIdentifier: appId]
 
         let storeViewController = SKStoreProductViewController()
@@ -49,10 +49,17 @@ public extension DAppManager {
 //        }
     }
 
-    class func showRateUs() {
+    static func showRateUs() {
         guard let activeScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
 
         // TODO: Use appStoreOverlay in StoreKit
         SKStoreReviewController.requestReview(in: activeScene)
+    }
+
+    static func hideConstraintLogs() {
+        // Hide constraint error messages on the console
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        UserDefaults.standard.set(false, forKey: "NSConstraintBasedLayoutLogUnsatisfiable")
+        UserDefaults.standard.set(false, forKey: "__NSConstraintBasedLayoutLogUnsatisfiable")
     }
 }
