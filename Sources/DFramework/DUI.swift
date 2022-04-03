@@ -35,5 +35,5 @@ public struct DUI {
     
     public static let buttonHeight1: Int = 50
 
-    static let transparentAlpha1: CGFloat = 0.5
+    public static let transparentAlpha1: CGFloat = 0.5
 }
