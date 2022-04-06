@@ -11,4 +11,8 @@ public struct DAlertContainer: Identifiable {
 
     public let id = UUID()
     public let alert: Alert
+
+    public init(alert: Alert) {
+        self.alert = alert
+    }
 }

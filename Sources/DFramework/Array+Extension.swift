@@ -13,6 +13,10 @@ public extension Array {
         let randomNumber = DUtil.randomNumber(min: 0, max: self.count - 1)
         return (element: self[randomNumber], index: randomNumber)
     }
+
+    func safe(index: Int) -> Element? {
+        index < self.count ? self[index] : nil
+    }
 }
 
 public extension Array where Element == String {

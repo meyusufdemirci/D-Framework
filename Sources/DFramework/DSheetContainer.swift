@@ -11,4 +11,8 @@ public struct DSheetContainer: Identifiable {
 
     public let id = UUID()
     public let sheet: AnyView
+
+    public init(sheet: AnyView) {
+        self.sheet = sheet
+    }
 }
