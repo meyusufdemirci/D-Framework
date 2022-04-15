@@ -7,7 +7,7 @@
 
 import AppTrackingTransparency
 
-extension ATTrackingManager.AuthorizationStatus {
+public extension ATTrackingManager.AuthorizationStatus {
 
     var localizedName: String {
         switch self {

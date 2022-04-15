@@ -45,15 +45,8 @@ public extension UIImage {
     }
 
     func compress(maxKb: Double) -> Data? {
-        var data: Data? = self.compress(quality: .highest)
-        var quality: CGFloat = 1
-
-        while data?.sizeAsKb() ?? 0 > maxKb {
-            data = self.compress(quality: quality)
-            quality -= 0.1
-        }
-
-        return data
+        let quality: CGFloat = maxKb / self.sizeAsKb()
+        return self.compress(quality: quality)
     }
 
     func orientation() -> DImageOrientation {

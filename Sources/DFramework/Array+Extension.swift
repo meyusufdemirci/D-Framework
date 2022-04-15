@@ -54,8 +54,8 @@ public extension Array where Element: Identifiable {
         }
     }
 
-    mutating func remove(_ newElement: Element) {
-        if let index = self.firstIndex(where: { $0.id == newElement.id }) {
+    mutating func remove(_ element: Element) {
+        if let index = self.firstIndex(where: { $0.id == element.id }) {
             self.remove(at: index)
         }
     }
